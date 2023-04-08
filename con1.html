@@ -1,0 +1,170 @@
+<html>
+<head>
+    <title>
+        Contact
+    </title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Passion+One&family=Patua+One&family=Special+Elite&display=swap');
+        
+        *{
+            font-family: 'BREE SERIF';
+        }
+        header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'BREE SERIF';
+    padding: 0 50px;
+}
+
+header .name{
+margin: 10px;
+padding: 10px;
+}
+
+header .nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header .nav ul li{
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+header .nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 10px;
+}
+        
+.parent {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 2 / 2 / 4 / 3; }
+.div2 { grid-area: 2 / 4 / 4 / 6; }
+        
+        .con2{
+            display: inline-block;
+        }
+        .fname{
+                  
+  padding: 12px 20px;
+  margin: 5px 0px;
+  box-sizing: border-box;
+            display: inline-block;
+        }
+        
+        .b1 {
+  min-width: 200px;
+  height: 120px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #000;
+  color: #000;
+  background: transparent;
+  z-index: 0;
+}
+.b1:hover:after {
+  top: 0;
+  left: 0;
+}
+.b1:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: firebrick;
+}
+        
+        footer{
+    font-family: 'BREE SERIF';
+    color: floralwhite;
+    background-color: rgb(35, 35, 35);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+    </style>
+    </head>
+    <body>
+    <header>
+        <div class="name">
+            <h3>Pawan Yadav</h3>
+            <span>Student</span>
+            
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+        
+        <div class="parent">
+            <div class="div1">
+                <h1 style=" color: firebrick;font-size: 40" align="left">Contact</h1>
+                <span>Get in Touch with me</span>
+                <br>
+                <h2>Phone</h2>
+                <span>+91-7021409078</span>
+                <br>
+                <h2>E-mail</h2>
+                <span>pawan.yadav@somaiya.edu</span>
+            </div>
+<div class="div2"> 
+    <table class="t2" cellpadding="5">
+    <tr>
+        <td style="font-size: 20" >First Name</td>
+        <td style="font-size: 20">Last Name</td>
+        </tr>
+        <tr>
+        <td><input type=text class="fname"></td>
+            <td><input type=text class="fname"></td>
+        </tr>
+        <tr>
+        <td style="font-size: 20">E-mail</td>
+            <td style="font-size: 20">Subject</td>
+        </tr>
+        <tr>
+        <td><input type="email" class="fname"></td>
+        <td><input type=text class="fname"></td>
+        </tr>
+        <tr>
+        <td style="font-size: 20">Message</td>
+        </tr>
+        <tr>
+        <td><textarea name="Text1" cols="25" rows="7"></textarea></td> 
+        <td><button class="b1" style="font-size: 15">Submit</button></td>
+        </tr>
+    </table>
+            </div>
+</div>
+          <footer id="contact">
+        <h2>Contact me :</h2>
+        <p>Email : pawan.yadav@somaiya.edu </p>
+        <p>Linkedin:</p>
+        <a href="https://www.linkedin.com/in/pawan-yadav-b2679a255/"><img src="/images/LinkedIn_logo_initials.png" style="height: 30px;width: 30px"></a>
+    </footer>
+    </body>
+</html>
